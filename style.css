@@ -1,0 +1,33 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border: 1px solid #ddd;
+}
+.tabs {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.tabs li {
+padding: 10px;
+background-color: #f6f4f4;
+border-right: 1px solid #ddd;
+cursor: pointer;
+transition: 0.2s;
+}
+.tabs li.active{
+    background-color: white;
+    border-top: 1px solid #019eff;
+    color: #1a92dc;
+}
+.content {
+background-color: white;
+}
+.content > div {
+padding: 20px;
+}
+.content > div:not(:first-child) {
+display: none;
+}
